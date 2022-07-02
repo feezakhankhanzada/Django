@@ -1,0 +1,24 @@
+
+<h1>This is the Tweets MAIN page</h1>
+<br>
+<h4>Tweets saved in our database:</h4>
+<div class="col-sm-3">
+    <table class="table table-bordered " border="1">
+        <tr><td colspan="4">JUSON Supermart</td></tr>
+        {% for tweets in myapp_tweet %}
+            <tr>
+                <td>{{tweets.id}}</td>
+                <td>{{tweets.text}}</td>
+                <td>{{tweets.selectedText}}</td>
+                <td>{{tweets.sentiments}}</td>
+            </tr>
+        {% endfor %}</table>
+</div>
+
+
+  
+
+
+
+
+
